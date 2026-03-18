@@ -1,0 +1,153 @@
+# Author: jambuz <https://github.com/jambuz>
+# Description: Tide is a low-contrast color theme based on the Helix theme `dark_plus` <https://github.com/helix-editor/helix/blob/master/runtime/themes/dark_plus.toml>
+# License: MIT
+
+# syntax
+"attribute" = "blue-pale"
+"comment" = "kelp"
+"constant" = "marine"
+"constant.builtin" = "blue-dark"
+"constant.character" = "sand"
+"constant.character.escape" = "sand"
+"constant.numeric" = "lime"
+"constructor" = "seafoam"
+"function" = "sand"
+"function.builtin" = "sand"
+"function.macro" = "blue-dark"
+"function.method" = "sand"
+"keyword" = "blue"
+"keyword.control" = "mauve"
+"keyword.control.conditional" = "mauve"
+"keyword.control.repeat" = "mauve"
+"keyword.control.return" = "mauve"
+"keyword.directive" = "mauve"
+"label" = "blue-light"
+"module" = "seafoam"
+"namespace" = "seafoam"
+"operator" = "neutral"
+"punctuation" = "neutral"
+"punctuation.delimiter" = "neutral"
+"special" = "blue-light"
+"string" = "mud"
+"string.regexp" = "sand"
+"string.special" = "marine"
+"tag" = "blue-light"
+"tag.attribute" = "blue-light"
+"type" = "seafoam"
+"type.builtin" = "seafoam"
+"type.enum.variant" = "blue-light"
+"variable" = "blue-pale"
+"variable.builtin" = "blue"
+"variable.other.member" = "blue-pale"
+"variable.parameter" = { fg = "blue-pale", modifiers = ["italic"] }
+
+# ui
+"ui.background" = { bg = "background" }
+"ui.background.separator" = { fg = "background-high" }
+"ui.bufferline" = { fg = "neutral-dim" }
+"ui.bufferline.active" = { fg = "neutral-light", modifiers = ["bold"] }
+"ui.cursor" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.match" = { bg = "background-low", underline.style = "curl" }
+"ui.cursor.primary" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursorcolumn.primary" = { bg = "background-low" }
+"ui.cursorcolumn.secondary" = { bg = "background-low" }
+"ui.cursorline.primary" = { bg = "background-low" }
+"ui.cursorline.secondary" = { bg = "background-low" }
+"ui.debug.active" = { fg = "coral" }
+"ui.debug.breakpoint" = { fg = "sand" }
+"ui.gutter" = {}
+"ui.gutter.selected" = { bg = "background-low" }
+"ui.help" = { fg = "neutral" }
+"ui.highlight" = { bg = "background-high" }
+"ui.highlight.frameline" = { bg = "background-mid" }
+"ui.linenr" = { fg = "neutral-dim" }
+"ui.linenr.selected" = { fg = "neutral-dark" }
+"ui.menu" = { fg = "neutral" }
+"ui.menu.scroll" = { fg = "blue" }
+"ui.menu.selected" = { fg = "neutral-light", bg = "background-high" }
+"ui.picker.header" = { fg = "neutral-dim" }
+"ui.picker.header.column" = { fg = "neutral", underline.style = "line" }
+"ui.picker.header.column.active" = { fg = "neutral-light", bg = "background-low", underline.style = "line", modifiers = ["bold"] }
+"ui.popup" = { bg = "background-mid" }
+"ui.popup.info" = { fg = "marine" }
+"ui.selection" = { bg = "background-high" }
+"ui.selection.primary" = { bg = "background-high" }
+"ui.statusline" = { fg = "neutral", bg = "background-low" }
+"ui.statusline.inactive" = { fg = "neutral-dim", bg = "background-low" }
+"ui.statusline.insert" = { fg = "background", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "background", bg = "neutral-dark", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "background", bg = "mauve", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "background-high" }
+"ui.text" = { fg = "neutral" }
+"ui.text.directory" = { fg = "blue" }
+"ui.text.focus" = { fg = "neutral-light", bg = "background-mid", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "neutral-dim" }
+"ui.text.info" = { fg = "neutral-light" }
+"ui.virtual.indent-guide" = { fg = "background-high" }
+"ui.virtual.inlay-hint" = { fg = "neutral-dim", modifiers = ["italic"] }
+"ui.virtual.jump-label" = { fg = "sand", modifiers = ["bold"] }
+"ui.virtual.ruler" = { bg = "background-low" }
+"ui.virtual.whitespace" = { fg = "background-high" }
+"ui.virtual.wrap" = { fg = "background-high" }
+"ui.window" = { fg = "background-high" }
+
+# diagnostics
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"diagnostic.error" = { underline = { color = "coral", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "neutral-dark", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.warning" = { underline = { color = "sand", style = "curl" } }
+
+"error" = { fg = "coral" }
+"hint" = { fg = "neutral-dim" }
+"info" = { fg = "blue" }
+"warning" = { fg = "sand" }
+
+# diff
+"diff.delta" = { fg = "sand" }
+"diff.minus" = { fg = "coral" }
+"diff.plus" = { fg = "seafoam" }
+
+# markup
+"markup.bold" = { modifiers = ["bold"] }
+"markup.heading" = { fg = "neutral-light", modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.text" = "seafoam"
+"markup.link.url" = { fg = "seafoam", modifiers = ["underlined"] }
+"markup.list" = "blue"
+"markup.quote" = { fg = "neutral-dim", modifiers = ["italic"] }
+"markup.raw" = "seafoam"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+[palette]
+# backgrounds
+background-low = "#262626"
+background-mid = "#2b2b2b"
+background = "#202020"
+background-high = "#383838"
+
+# foregrounds
+neutral-dim = "#5a6464"
+neutral-dark = "#7e8f8f"
+neutral = "#b0bcbc"
+neutral-light = "#ddddd5"
+
+# blues
+blue-dark = "#7896b8"
+blue = "#7191c8"
+blue-light = "#85aacc"
+blue-pale = "#9dc2e6"
+
+# accents
+marine = "#4a9bcf"
+coral = "#c47878"
+lime = "#b5caa3"
+kelp = "#6d8a60"
+mauve = "#ac83c7"
+mud = "#ae9578"
+sand = "#d0c197"
+seafoam = "#6ab7a8"
+
+# misc
+cursor = "#9e9e9e"
